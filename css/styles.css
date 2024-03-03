@@ -1,0 +1,111 @@
+:root {
+    /* Colors */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+
+    /* Fonts*/
+    --Inter-400: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--off-black);
+    font-size: 14px;
+}
+
+.container {
+    background-color: var(--dark-grey);
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 600px;
+}
+
+.container__image {
+    border-radius: 50%;
+    width: 150px;
+    padding: 1.5em;
+    margin-top: 14px;
+}
+
+.container__title {
+    margin-bottom: 5px;
+    font-family: var(--Inter-400);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt"0;
+}
+
+.container__title,
+.container__description,
+.list a {
+    color: var(--white);
+}
+
+.container__subtitle {
+    color: var(--green);
+    margin-bottom: 24px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt"0;
+    font-size: 12px;
+}
+
+.container__description {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt"0;
+    font-size: 10px;
+}
+
+.container__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt"0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 250px;
+    gap: 16px;
+
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list .list__item {
+    padding: 1em 7em;
+    background-color: var(--grey);
+    border-radius: 7px;
+
+}
